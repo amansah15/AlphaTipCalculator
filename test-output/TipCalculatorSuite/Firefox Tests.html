@@ -1,0 +1,2318 @@
+<html>
+<head>
+<title>TestNG:  Firefox Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Firefox Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/20</td>
+</tr><tr>
+<td>Started on:</td><td>Mon May 18 12:50:12 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>52 seconds (52575 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest<br>Parameters: firefox</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace173942892", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace173942892'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>51</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest<br>Parameters: firefox</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace112107564", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace112107564'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>51</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest<br>Parameters: firefox</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace535350542", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace535350542'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>49</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest<br>Parameters: firefox</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace660809556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace660809556'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>51</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest<br>Parameters: firefox</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace438276871", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace438276871'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>51</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest<br>Parameters: firefox</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace499341034", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace499341034'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>42</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest<br>Parameters: firefox</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1904042167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1904042167'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>49</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest<br>Parameters: firefox</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace40176889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace40176889'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>49</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest<br>Parameters: firefox</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace871017927", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace871017927'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>51</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest<br>Parameters: firefox</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1896578053", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1896578053'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>49</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.tearDown()'><b>tearDown</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.setup()'><b>setup</b><br>Test class: tests.TipCalculatorTest</td>
+<td></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_019, 450.0, INR, 5.0, 6.0, Confetti</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1657750895", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1657750895'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_012, 1500.0, INR, 2.0, 7.0, Confetti</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace762328849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace762328849'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_006, 1000.0, USD, 3.0, 6.0, Valid</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2027971171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2027971171'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_008, 1000.0, GBP, -2.0, 5.0, InvalidPeople</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace597133873", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace597133873'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_018, 250.0, EUR, 2.0, 3.0, MediumRating</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace556068162", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace556068162'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_011, 800.0, USD, 4.0, 4.0, MediumRating</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1747347114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1747347114'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_014, 1200.0, EUR, 3.0, 1.0, Feedback</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1059839878", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1059839878'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_005, 0.0, INR, 2.0, 5.0, InvalidBill</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace835299492", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace835299492'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_004, -500.0, INR, 2.0, 5.0, InvalidBill</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1243251639", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1243251639'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_003, abc, INR, 2.0, 5.0, InvalidBill</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1022342050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1022342050'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_017, 9999.0, USD, 1.0, 10.0, Celebration</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace572268589", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace572268589'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_016, 100.0, INR, 10.0, 9.0, Celebration</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace546925965", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace546925965'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_002, 1000.5, INR, 2.0, 5.0, Valid</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1761641397", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1761641397'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_010, 500.0, INR, 3.0, 2.0, Feedback</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1542612516", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1542612516'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_001, NA, NA, NA, NA, Launch</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace686922598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace686922598'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_007, 1000.0, EUR, 0.0, 5.0, InvalidPeople</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace654514299", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace654514299'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_013, 2000.0, INR, 5.0, 10.0, Celebration</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1398202155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1398202155'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_020, 700.0, USD, 2.0, 5.0, Valid</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1763363204", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1763363204'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_015, 600.0, GBP, 2.0, 8.0, Confetti</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1355978125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1355978125'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+<tr>
+<td title='tests.TipCalculatorTest.runTest()'><b>runTest</b><br>Test class: tests.TipCalculatorTest<br>Parameters: TC_009, 1000.0, INR, 1.5, 5.0, InvalidPeople</td>
+<td><div><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1956174119", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1956174119'><pre>org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+	at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+	at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:119)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:95)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:85)
+	at utils.DriverFactory.initDriver(DriverFactory.java:25)
+	at base.BaseTest.setup(BaseTest.java:15)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:81)
+	at org.testng.internal.thread.Async$AsyncTask.run(Async.java:34)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/150.0.3/win64/en-US/Firefox%20Setup%20150.0.3.exe
+Build info: version: &apos;4.41.0&apos;, revision: &apos;9fc754f&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.10&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+	at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+	at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+	... 22 more
+</pre></div></td>
+<td>0</td>
+<td>tests.TipCalculatorTest@6a2f6f80</td></tr>
+</table><p>
+</body>
+</html>
