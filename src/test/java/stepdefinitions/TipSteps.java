@@ -17,7 +17,17 @@ public class TipSteps {
     // ✅ ADD THIS (VERY IMPORTANT)
     @Before
     public void setup() {
-        DriverFactory.initDriver("chrome");   // you can make dynamic later
+ 
+        String threadName = Thread.currentThread().getName();
+        String browser;
+ 
+        if (threadName.contains("1")) {
+            browser = "chrome";
+        } else {
+            browser = "edge";
+        }
+ 
+        DriverFactory.initDriver(browser);
         page = new TipCalculatorPage();
     }
 
